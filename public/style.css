@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*+++++++++++++++++ NAVBAR Component +++++++++++++++++++++++++*/
+.navbar {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #5b78c7;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    opacity: 0;
+    top: 10vh;
+    width: 100%;
+    transition: all 1s cubic-bezier(.41, -0.46, .63, 1.45);
+    height: 100vh;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.nav-links li {
+
+    margin: 0px auto;
+}
+
+.nav-links li:hover {
+    border-bottom: 1px solid red;
+
+}
+
+.nav-links:hover li .home-icon {
+    transform: scale(1.3)
+}
+
+.home-icon:hover,
+.about-icon:hover,
+.projects-icon:hover,
+.contact-icon:hover {
+    background-color: red;
+}
+
+.home-icon,
+.about-icon,
+.projects-icon,
+.contact-icon {
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    transition: all 1s;
+    margin: auto;
+    padding: 0px 50%;
+}
+
+.hamburger {
+    cursor: pointer;
+
+}
+
+.minus-icon {
+    color: red;
+    position: absolute;
+    right: 7%;
+    top: 7%;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.minus-icon:hover {
+    text-decoration: line-through;
+    transform: scale(1.3);
+}
+
+.logo {
+
+    font-size: 30px;
+}
+.logo h1 span{
+    text-decoration: none;
+}
+
+@media(min-width: 700px) {
+    .hamburger {
+        display: none;
+    }
+}

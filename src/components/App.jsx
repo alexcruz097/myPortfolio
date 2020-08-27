@@ -3,7 +3,7 @@ import Navbar from "./Navbar.jsx"
 
 function App() {
   return (
-    <div>
+    <div className="whole-page">
       <Navbar />
     </div>
   );
