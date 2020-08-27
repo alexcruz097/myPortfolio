@@ -1,9 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar.jsx"
+
 function App() {
   return (
-    <Navbar />
-  )
+    <div>
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
