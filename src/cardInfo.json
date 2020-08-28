@@ -1,33 +1,145 @@
-{
-  "projects": [
-    { "name": "Weather-App", 
-        "video": "../" },
-    {
-      "name": "Trivia-App",
-      "video": "../"
-    },
-    {
-        "name": "Budget-App",
-        "video": "../"
-    },
-    {
-        "name":"Seasons-App",
-        "video": "../"
-    },
-    {
-        "name": "Microsoft-Clone",
-        "video": "../"
-    },
-    {
-        "name": "Menu",
-        "video" : "../"
-    },
-    {
-        "name": "Random-Quotes",
-        "video": "../"
-    },
-    {
-        "name": "Random-Facts"
-    }
-  ]
-}
+[
+  {
+    "name": "Weather-App",
+    "description": "Do you need a sweater or a beach towel. Use this app to find out!",
+    "video": "../",
+    "techUse": [
+      { "tech-1": "Html" },
+      { "tech-2": "Css" },
+      { "tech-3": "JavaScript" },
+      { "tech-4": "React js" }
+    ]
+  },
+  {
+    "name": "Trivia-App",
+    "description": "Put your brain to work. How many questions can you get right?",
+
+    "video": "../",
+    "techUse": [
+      {
+        "tech": "Html"
+      },
+      {
+        "tech-2": "Css"
+      },
+      {
+        "tech-3": "JavaScript"
+      },
+      {
+        "tech-4": "React js"
+      }
+    ]
+  },
+  {
+    "name": "Budget-App",
+    "description": "Need help with your financial responsibiliy? The Budget-App will be your new best friend.",
+
+    "video": "../",
+    "techUse": [
+      {
+        "tech": "Html"
+      },
+      {
+        "tech-2": "Css"
+      },
+      {
+        "tech-3": "JavaScript"
+      },
+      {
+        "tech-4": "React js"
+      }
+    ]
+  },
+  {
+    "name": "Seasons-App",
+    "description": "Learn about the diffrent seasons that our beautiful planet has.",
+    "video": "../",
+    "techUse": [
+      {
+        "tech": "Html"
+      },
+      {
+        "tech-2": "Css"
+      },
+      {
+        "tech-3": "JavaScript"
+      },
+      {
+        "tech-4": "React js"
+      }
+    ]
+  },
+  {
+    "name": "Microsoft-Clone",
+    "description": "A Microsoft home page clone.",
+    "video": "../",
+    "techUse": [
+      {
+        "tech": "Html"
+      },
+      {
+        "tech-2": "Css"
+      },
+      {
+        "tech-3": "JavaScript"
+      }
+    ]
+  },
+  {
+    "name": "Menu",
+    "description": "Doesnt this menu make you hugry? It makes me hungry.",
+    "video": "../",
+    "techUse": [
+      {
+        "tech": "Html"
+      },
+      {
+        "tech-2": "Css"
+      },
+      {
+        "tech-3": "JavaScript"
+      },
+      {
+        "tech-4": "React js"
+      }
+    ]
+  },
+  {
+    "name": "Random-Quotes",
+    "description": "Get inspire by this Quotes from some of the great human-beings that have walked this earth.",
+    "video": "../",
+    "techUse": [
+      {
+        "tech": "Html"
+      },
+      {
+        "tech-2": "Css"
+      },
+      {
+        "tech-3": "JavaScript"
+      },
+      {
+        "tech-4": "React js"
+      }
+    ]
+  },
+  {
+    "name": "Random-Facts",
+    "description": "Do you want to impress your friend? Use this random fact generator and blow their mind in your next get together.",
+    "video": "../",
+    "techUse": [
+      {
+        "tech": "Html"
+      },
+      {
+        "tech-2": "Css"
+      },
+      {
+        "tech-3": "JavaScript"
+      },
+      {
+        "tech-4": "React js"
+      }
+    ]
+  }
+]
