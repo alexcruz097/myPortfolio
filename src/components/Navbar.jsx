@@ -51,24 +51,24 @@ const Navbar = () => {
           className="minus-icon"
           icon={faMinus}
         />
-        <li>
+        <li onClick={hamburgerIsClick}>
           <a className="home-icon" href="#home">
             <FontAwesomeIcon icon={faHome} /> Home
           </a>
         </li>
 
-        <li>
+        <li onClick={hamburgerIsClick}>
           <a className="about-icon" href="#home">
             <FontAwesomeIcon icon={faUserAstronaut} /> About
           </a>
         </li>
-        <li>
+        <li onClick={hamburgerIsClick}>
           <a className="projects-icon" href="#projects">
             <FontAwesomeIcon icon={faBriefcase} /> Projects
           </a>
         </li>
-        <li>
-          <a className="contact-icon" href="#contactMe">
+        <li onClick={hamburgerIsClick}>
+          <a className="contact-icon" href="#contactMe" >
             <FontAwesomeIcon icon={faPhoneAlt} /> Contact
           </a>
         </li>

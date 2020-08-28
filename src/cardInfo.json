@@ -1,0 +1,33 @@
+{
+  "projects": [
+    { "name": "Weather-App", 
+        "video": "../" },
+    {
+      "name": "Trivia-App",
+      "video": "../"
+    },
+    {
+        "name": "Budget-App",
+        "video": "../"
+    },
+    {
+        "name":"Seasons-App",
+        "video": "../"
+    },
+    {
+        "name": "Microsoft-Clone",
+        "video": "../"
+    },
+    {
+        "name": "Menu",
+        "video" : "../"
+    },
+    {
+        "name": "Random-Quotes",
+        "video": "../"
+    },
+    {
+        "name": "Random-Facts"
+    }
+  ]
+}
