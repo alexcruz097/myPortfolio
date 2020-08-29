@@ -32,15 +32,24 @@ const Navbar = () => {
   function hamburgerIsClick() {
     setHamburgerClick(false);
   }
+  // Make nav-bar hide when scrolling down
+  window.onscroll = function () { myFunction() };
+
+  function myFunction() {
+    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+      hamburgerIsClick();
+    }
+  }
+
   return (
     <nav className="navbar">
-      <div className="logo">
-        <a href="#home">
+   
+        <a className="logo" href="#home">
           <h1>
             Alex <span>Cruz</span>
           </h1>
         </a>
-      </div>
+      
       <ul
         className="nav-links"
         style={toggleHamburgerClick ? showNavLinks : hideNavLinks}

@@ -5,8 +5,8 @@
 }
 
 body {
-    background-image: url("../src/images/homeImageSmall.jpg");
-    background-size: cover;
+
+    color: #00334e;
 }
 
 /*+++++++++++++++++ NAVBAR Component +++++++++++++++++++++++++*/
@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    background-color: #5b78c7;
+    background-color: #1b262c;
 
     overflow: hidden;
     position: fixed;
@@ -38,7 +38,7 @@ body {
     width: 100%;
     transition: all .7s cubic-bezier(.41, -0.46, .63, 2.45);
     height: 100vh;
-    background-color: skyblue;
+    background-color: #1b262c;
     cursor: pointer;
 }
 
@@ -76,6 +76,7 @@ body {
 }
 
 .hamburger {
+    color: #fdcb9e;
     cursor: pointer;
 
 }
@@ -95,7 +96,8 @@ body {
 }
 
 .logo {
-
+    text-decoration: none;
+    color: #00b7c2;
     font-size: 30px;
 }
 
@@ -108,9 +110,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+
     height: 100vh;
     line-height: 1.3;
+    background: url("../src/images/homeImageLarge.jpg");
+    background-size: 30px;
+    /** moved this property down */
 }
 
 
@@ -124,6 +129,7 @@ body {
 }
 
 .hireBTN {
+    background-color: #ee6f57;
     margin: 10px 0px;
     padding: 5px 50px;
     cursor: pointer;
@@ -132,7 +138,7 @@ body {
 /*+++++++++++++++++ CARD Component +++++++++++++++++++++++++*/
 .projects-section {
     /* display grid for the cards */
-margin-top: 10vh;
+    margin-top: 10vh;
 
 }
 
@@ -143,14 +149,14 @@ margin-top: 10vh;
 
 .card-menu {
     border: 1px solid black;
-padding: 0px 5%;
+    padding: 0px 5%;
     margin: auto;
 }
 
-.description
-{
+.description {
     font-size: 15px;
-} 
+}
+
 .projectsName {
     font-size: 30px;
     font-weight: 100;
@@ -160,6 +166,77 @@ padding: 0px 5%;
     list-style: none;
 }
 
+/*+++++++++++++++++ Card Component +++++++++++++++++++++++++*/
+
+.project-gif {
+    width: 100%;
+    margin: 13px 0px;
+    border-radius: 12px;
+}
+
+.projects-section {
+    /* display grid */
+    display: grid;
+    line-height: 1.3;
+}
+
+.card-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-name {
+
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.tech-use li {
+
+    font-size: 17px;
+    font-weight: bolder;
+
+}
+
+/*+++++++++++++++++ CONTACTS Component +++++++++++++++++++++++++*/
+.contactMe {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMe label
+{
+    font-size: 20px;
+    font-weight: bolder;
+}.contactHeader {
+    font-size: 50px;
+    font-weight: 100;
+}
+.email,.phone
+{
+    text-decoration: none;
+    color: black;
+}
+.email span,
+.phone span{
+    font-weight: bold;
+}
+
+/*+++++++++++++++++ FOOTER Component +++++++++++++++++++++++++*/
+.footer{
+    border-top: 1px solid black;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+}
 @media(min-width: 700px) {
     .hamburger {
         display: none;
