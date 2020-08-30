@@ -6,8 +6,7 @@
 
 body {
 
-    color: #eeeeee;
-
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -23,6 +22,7 @@ body {
     /* Position the navbar at the top of the page */
     width: 100%;
     overflow: hidden;
+    border-bottom: 6px solid #30475e;
 }
 
 .navbar {
@@ -30,6 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    font-family: 'Domine', serif;
 }
 
 .nav-links {
@@ -82,14 +83,14 @@ body {
 }
 
 .hamburger {
-    color: #4f8a8b;
+    color: #ececec;
     cursor: pointer;
     margin-right: 5%;
 
 }
 
 .minus-icon {
-    color: red;
+    color: #fde9c9;
     position: absolute;
     right: 7%;
     top: 7%;
@@ -104,7 +105,7 @@ body {
 
 .logo {
     text-decoration: none;
-    color: #4f8a8b;
+    color: #ececec;
     font-size: 60px;
     margin-left: 5%;
 }
@@ -116,10 +117,10 @@ body {
 
 /*+++++++++++++++++ HOME Component +++++++++++++++++++++++++*/
 .home {
-
+    color: #ececec;
     margin-top: 10vh;
     border: 1px solid black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("./images/homeImageLarge.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/homeImageLarge.jpg");
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -138,18 +139,24 @@ body {
 
 .header {
     font-size: 55px;
-    font-weight: 100;
+    font-weight: lighter;
+    font-family: 'Domine', serif;
 }
 
 .my-description {
     font-size: 35px;
+
 }
 
 .hireBTN {
-    background-color: #fbd46d;
+    background-color: #f2a365;
     font-size: 20px;
     padding: 12px 42px;
-
+    cursor: pointer;
+    margin-top: 13px;
+    color: #30475e;
+    border: none;
+    border-radius: 12px;
 }
 
 /*+++++++++++++++++ CARD Component +++++++++++++++++++++++++*/
@@ -206,7 +213,7 @@ body {
 }
 
 .projects-name {
-
+    font-family: 'Domine', serif;
     font-size: 40px;
     font-weight: 100;
 }
