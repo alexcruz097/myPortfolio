@@ -11,7 +11,7 @@ const Footer = () =>
             <h1>Alex Cruz &copy;
            <a>{currentYear.getFullYear()}</a>  
             </h1>
-            <a href="home"><FontAwesomeIcon color="black"icon={faHandPointUp} size="2x" />to top</a>
+            <a href="#home"><FontAwesomeIcon color="black"icon={faHandPointUp} size="2x" />to top</a>
             <p>Created with React Js</p>
         </footer>
     )

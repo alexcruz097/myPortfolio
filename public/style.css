@@ -6,25 +6,30 @@
 
 body {
 
-    color: #00334e;
+    color: #eeeeee;
+
+
 }
 
-/*+++++++++++++++++ NAVBAR Component +++++++++++++++++++++++++*/
-.navbar {
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    background-color: #1b262c;
 
-    overflow: hidden;
+
+/*+++++++++++++++++ NAVBAR Component +++++++++++++++++++++++++*/
+.nav-section {
+    background-color: #222831;
+    height: 10vh;
     position: fixed;
     /* Set the navbar to fixed position */
     top: 0;
     /* Position the navbar at the top of the page */
     width: 100%;
-    /* Full width */
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
 }
 
 .nav-links {
@@ -40,6 +45,7 @@ body {
     height: 100vh;
     background-color: #1b262c;
     cursor: pointer;
+
 }
 
 .nav-links li {
@@ -76,8 +82,9 @@ body {
 }
 
 .hamburger {
-    color: #fdcb9e;
+    color: #4f8a8b;
     cursor: pointer;
+    margin-right: 5%;
 
 }
 
@@ -97,42 +104,52 @@ body {
 
 .logo {
     text-decoration: none;
-    color: #00b7c2;
-    font-size: 30px;
+    color: #4f8a8b;
+    font-size: 60px;
+    margin-left: 5%;
 }
 
 .logo h1 span {
+
     text-decoration: none;
 }
 
 /*+++++++++++++++++ HOME Component +++++++++++++++++++++++++*/
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    height: 100vh;
-    line-height: 1.3;
-    background: url("../src/images/homeImageLarge.jpg");
-    background-size: 30px;
-    /** moved this property down */
+    margin-top: 10vh;
+    border: 1px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("./images/homeImageLarge.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.homeContent {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../src/images/homeImageLarge.jpg");
+    background-size: 60px;
+}
 
 .header {
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 100;
 }
 
-.description {
-    font-size: 17px;
+.my-description {
+    font-size: 35px;
 }
 
 .hireBTN {
-    background-color: #ee6f57;
-    margin: 10px 0px;
-    padding: 5px 50px;
-    cursor: pointer;
+    background-color: #fbd46d;
+    font-size: 20px;
+    padding: 12px 42px;
+
 }
 
 /*+++++++++++++++++ CARD Component +++++++++++++++++++++++++*/
@@ -151,6 +168,7 @@ body {
     border: 1px solid black;
     padding: 0px 5%;
     margin: auto;
+
 }
 
 .description {
@@ -183,6 +201,7 @@ body {
 .card-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -212,33 +231,31 @@ body {
     align-items: center;
 }
 
-.contactMe label
-{
+.contactMe label {
     font-size: 20px;
     font-weight: bolder;
-}.contactHeader {
+}
+
+.contactHeader {
     font-size: 50px;
     font-weight: 100;
 }
-.email,.phone
-{
+
+.email,
+.phone {
     text-decoration: none;
     color: black;
 }
+
 .email span,
-.phone span{
+.phone span {
     font-weight: bold;
 }
 
 /*+++++++++++++++++ FOOTER Component +++++++++++++++++++++++++*/
-.footer{
+.footer {
     border-top: 1px solid black;
     height: 7vh;
     display: flex;
     justify-content: space-around;
-}
-@media(min-width: 700px) {
-    .hamburger {
-        display: none;
-    }
 }

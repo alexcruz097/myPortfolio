@@ -1,12 +1,11 @@
 import React from "react";
-import gitHub from "../images/gitHub.png";
-
 import  WeatherApp  from "../videos/Weather-App.gif"
 const Card = (props) => {
 console.log(props.video)
 
 
   return (
+    <section className="projects-section">
     <div className="card-menu" id="projects">
       <h1 className="projects-name">{props.name}</h1>
       <p className="description">{props.description}</p>
@@ -22,8 +21,9 @@ console.log(props.video)
        }
       
       </ol>
-      <a href="https://github.com/alexcruz097/weather-react" target="_blank"><img className="gitHub" src={gitHub} /></a>
-    </div>
+      <a href="https://github.com/alexcruz097/weather-react" target="_blank"><img className="gitHub"  /></a>
+      </div>
+      </section>
   );
 };
 

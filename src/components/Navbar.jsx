@@ -42,6 +42,7 @@ const Navbar = () => {
   }
 
   return (
+    <section className="nav-section">
     <nav className="navbar">
    
         <a className="logo" href="#home">
@@ -85,11 +86,12 @@ const Navbar = () => {
       <div className="hamburger">
         <FontAwesomeIcon
           onClick={toggleHamburgerClick ? hamburgerIsClick : hamburgerNotClick}
-          size="3x"
+          size="5x"
           icon={faHamburger}
         />
       </div>
-    </nav>
+      </nav>
+      </section>
   );
 };
 export default Navbar;

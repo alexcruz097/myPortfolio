@@ -6,7 +6,7 @@ const Home = () => {
     <section className="home" id="home">
       <div className="homeContent">
         <h1 className="header">Hello, My name is Alex Cruz</h1>
-        <p className="description">
+        <p className="my-description">
           I'am a Self Taught Front-End Web Developer.
         </p>
         <a href="#contactMe">
