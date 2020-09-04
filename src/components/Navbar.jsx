@@ -8,7 +8,8 @@ import {
   faMinus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+// importing smoth scrolling
+import { Link, animateScroll as scroll } from "react-scroll";
 const Navbar = () => {
   // Use this variable to toggle the state of the hamburger
   const [toggleHamburgerClick, setHamburgerClick] = useState(false);
@@ -70,27 +71,55 @@ const Navbar = () => {
             className="minus-icon"
             icon={faMinus}
           />
-          <li onClick={hamburgerIsClick}>
-            <a className="home-icon" href="#home">
-              <FontAwesomeIcon icon={faHome} /> Home
-            </a>
-          </li>
+          <Link
+            className="home-icon"
+            onClick={hamburgerIsClick}
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+          >
+            <FontAwesomeIcon icon={faHome} /> Home
+          </Link>
 
-          <li onClick={hamburgerIsClick}>
-            <a className="about-icon" href="#home">
-              <FontAwesomeIcon icon={faUserAstronaut} /> About
-            </a>
-          </li>
-          <li onClick={hamburgerIsClick}>
-            <a className="projects-icon" href="#projects">
-              <FontAwesomeIcon icon={faBriefcase} /> Projects
-            </a>
-          </li>
-          <li onClick={hamburgerIsClick}>
-            <a className="contact-icon" href="#contactMe">
-              <FontAwesomeIcon icon={faPhoneAlt} /> Contact
-            </a>
-          </li>
+          <Link
+            className="home-icon"
+            onClick={hamburgerIsClick}
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+          >
+            <FontAwesomeIcon icon={faUserAstronaut} /> About
+          </Link>
+          <Link
+            className="home-icon"
+            onClick={hamburgerIsClick}
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+          >
+            <FontAwesomeIcon icon={faBriefcase} /> Projects
+          </Link>
+          <Link
+            className="home-icon"
+            onClick={hamburgerIsClick}
+            activeClass="active"
+            to="contactMe"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+          >
+            <FontAwesomeIcon icon={faPhoneAlt} /> Contacts
+          </Link>
         </ul>
         <div className="hamburger">
           <FontAwesomeIcon

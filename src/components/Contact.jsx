@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () =>
 {
     return (
-        <form className="contactMe">
+        <form className="contactMe" id="contactMe">
             <h1 className="contactHeader">Contact Me</h1>
             <label for="phone">Phone: </label>
             <a className="phone" href="tel:7472559610">Give me a call  <span>747-255-9610</span></a>

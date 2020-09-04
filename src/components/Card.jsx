@@ -5,14 +5,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Card = (props) => {
-  console.log(props.video);
-
   return (
-    <section className="projects-section">
+   
       <div className="card-menu" id="projects">
         <h1 className="projects-name">{props.name}</h1>
-        <FontAwesomeIcon className="info-icon" icon={faInfoCircle} />
-        <p className="description">{props.description}</p>
+      <p className="description"><FontAwesomeIcon icon={faInfoCircle} color="#222831" />  {props.description}</p>
         <a href="https://eloquent-sammet-a7d128.netlify.app" target="_blank">
           <img className="project-gif" src={WeatherApp} />
         </a>
@@ -23,10 +20,10 @@ const Card = (props) => {
           })}
         </ol>
         <a href="https://github.com/alexcruz097/weather-react" target="_blank">
-          <FontAwesomeIcon icon={faGithub} size="3x" />
+        <FontAwesomeIcon icon={faGithub} color="#222831" size="3x" />
         </a>
       </div>
-    </section>
+  
   );
 };
 

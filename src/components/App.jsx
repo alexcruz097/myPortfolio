@@ -11,17 +11,20 @@ function App() {
     <div className="whole-page">
       <Navbar />
       <Home />
-      {data.map((data, index) => {
-        return (
-          <Card
-            key={index}
-            name={data.name}
-            video={data.video}
-            description={data.description}
-            techUse={data.techUse}
-          />
-        );
-      })}
+
+      <section className="projects-section">
+        {data.map((data, index) => {
+          return (
+            <Card
+              key={index}
+              name={data.name}
+              video={data.video}
+              description={data.description}
+              techUse={data.techUse}
+            />
+          );
+        })}
+      </section>
       <Contact />
       <Footer />
     </div>
