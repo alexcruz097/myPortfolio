@@ -45,7 +45,7 @@ body {
 }
 
 /* this is the thing */
-.home-icon >.active {
+.home-icon>.active {
     border-bottom: 1px solid #333;
 }
 
@@ -65,9 +65,20 @@ body {
 .home-icon:hover,
 .about-icon:hover,
 .projects-icon:hover,
-.contact-icon:hover {
+.contact-icon:hover,
+.portfolio-github:hover {
     background-color: #222831;
     transform: scale(1.2)
+}
+
+.portfolio-github {
+    padding: 0% 25%;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    text-decoration: none;
+    color: #cecece;
+    transition: all 1s;
 }
 
 .hamburger {
@@ -284,4 +295,16 @@ footer {
 .react-created {
     font-family: cursive;
     font-size: 15px;
+}
+
+/* width 500px and up */
+@media(min-width: 500px) {
+
+    /* ~~~~~~~~NAVBAR Componet~~~~~~~~~ */
+    .home-icon,
+    .about-icon,
+    .projects-icon,
+    .contact-icon {
+        font-size: 40px;
+    }
 }

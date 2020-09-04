@@ -7,6 +7,7 @@ import {
   faHamburger,
   faMinus,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // importing smoth scrolling
 import { Link } from "react-scroll";
@@ -120,6 +121,7 @@ const Navbar = () => {
           >
             <FontAwesomeIcon icon={faPhoneAlt} /> Contacts
           </Link>
+          <a href="https://github.com/alexcruz097/myPortfolio" target="_blank" className="portfolio-github"><FontAwesomeIcon icon={faGithub} size="3x" color="black"/>portfolio</a> 
         </ul>
         <div className="hamburger">
           <FontAwesomeIcon
