@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="whole-page">
       <Navbar />
-      <Home />
+      <Home id="home" />
 
-      <section className="projects-section">
+      <section className="projects-section" id="projects">
         {data.map((data, index) => {
           return (
             <Card
@@ -25,7 +25,7 @@ function App() {
           );
         })}
       </section>
-      <Contact />
+      <Contact id="contactMe" />
       <Footer />
     </div>
   );

@@ -71,7 +71,7 @@ const Navbar = () => {
             className="minus-icon"
             icon={faMinus}
           />
-          <Link
+          <Link 
             className="home-icon"
             onClick={hamburgerIsClick}
             activeClass="active"

@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Card = (props) => {
   return (
    
-      <div className="card-menu" id="projects">
+      <div className="card-menu" >
         <h1 className="projects-name">{props.name}</h1>
       <p className="description"><FontAwesomeIcon icon={faInfoCircle} color="#222831" />  {props.description}</p>
         <a href="https://eloquent-sammet-a7d128.netlify.app" target="_blank">
