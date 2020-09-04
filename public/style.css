@@ -6,6 +6,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+
 }
 
 /*+++++++++++++++++ NAVBAR Component +++++++++++++++++++++++++*/
@@ -44,8 +45,8 @@ body {
 }
 
 /* this is the thing */
-.navbar>.active {
-    border-bottom: 1px solid red;
+.home-icon >.active {
+    border-bottom: 1px solid #333;
 }
 
 .home-icon,
@@ -56,8 +57,8 @@ body {
     text-decoration: none;
     cursor: pointer;
     padding: 0% 25%;
-    margin: 80px auto;
-    font-size: 80px;
+    margin: 20px auto;
+    font-size: 25px;
     transition: all 1s;
 }
 
@@ -93,7 +94,7 @@ body {
 .logo {
     text-decoration: none;
     color: #ececec;
-    font-size: 60px;
+    font-size: 30px;
     margin-left: 5%;
 }
 
@@ -122,27 +123,42 @@ body {
     align-items: center;
     background-image: url("../src/images/homeImageLarge.jpg");
     background-size: 60px;
+    line-height: 1.3;
 }
 
 .header {
-    font-size: 55px;
+    font-size: 25px;
     font-weight: lighter;
     font-family: "Domine", serif;
 }
 
 .my-description {
-    font-size: 35px;
+    font-size: 15px;
 }
 
 .hireBTN {
     background-color: #f2a365;
-    font-size: 35px;
-    padding: 12px 200px;
+    font-size: 20px;
+    padding: 6px 47px;
     cursor: pointer;
-    margin-top: 33px;
+    margin-top: 20px;
     color: #30475e;
     border: none;
     border-radius: 12px;
+    transition: all .7s ease-in-out
+}
+
+.handshake-icon {
+
+    transition: all 1s ease-in-out
+}
+
+.hireBTN:hover {
+    transform: scale(1.2)
+}
+
+.hireBTN:hover .handshake-icon {
+    transform: rotate(45deg)
 }
 
 /*+++++++++++++++++ CARD Component +++++++++++++++++++++++++*/
@@ -178,7 +194,7 @@ body {
 .projects-name {
     color: #f2a365;
     font-family: "Domine", serif;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 100;
     text-shadow: 20px 5px 10px rgba(0, 0, 0, .4)
 }
@@ -186,7 +202,7 @@ body {
 
 
 .description {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .project-gif {
@@ -220,19 +236,19 @@ body {
 
 .contactMe label {
     font-family: "Domine", serif;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: 700;
 }
 
 .contactHeader {
-    font-size: 120px;
+    font-size: 55px;
     font-weight: 100;
     font-family: "Domine", serif;
 }
 
 .email,
 .phone {
-    font-size: 45px;
+    font-size: 22px;
     text-decoration: none;
     color: #222831;
 }
@@ -253,12 +269,19 @@ body {
     color: #cecece;
 }
 
+.copy-rights {
+    font-size: 15px;
+}
+
 .to-top {
     color: #cecece;
 }
 
-@media only screen and (min-width: 600px) {
-    .footer {
-        background-color: red;
-    }
+footer {
+    font-size: 9px;
+}
+
+.react-created {
+    font-family: cursive;
+    font-size: 15px;
 }

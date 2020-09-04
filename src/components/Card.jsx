@@ -20,7 +20,7 @@ const Card = (props) => {
           })}
         </ol>
         <a href="https://github.com/alexcruz097/weather-react" target="_blank">
-        <FontAwesomeIcon icon={faGithub} color="#222831" size="3x" />
+        <FontAwesomeIcon icon={faGithub} color="#222831" size="2x" />
         </a>
       </div>
   

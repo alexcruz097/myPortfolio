@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // importing smoth scrolling
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 const Navbar = () => {
   // Use this variable to toggle the state of the hamburger
   const [toggleHamburgerClick, setHamburgerClick] = useState(false);
@@ -66,7 +66,7 @@ const Navbar = () => {
           style={toggleHamburgerClick ? showNavLinks : hideNavLinks}
         >
           <FontAwesomeIcon
-            size="3x"
+            size="2x"
             onClick={hamburgerIsClick}
             className="minus-icon"
             icon={faMinus}
@@ -126,7 +126,7 @@ const Navbar = () => {
             onClick={
               toggleHamburgerClick ? hamburgerIsClick : hamburgerNotClick
             }
-            size="5x"
+            size="3x"
             icon={faHamburger}
             // rotate when is click
             style={toggleHamburgerClick ? rotateHam : UnRotateHam}
