@@ -10,6 +10,7 @@ function scrollToTop() {
   scroll.scrollToTop();
   }
   
+
   return (
     <footer className="footer">
       <h1 className="copy-rights">

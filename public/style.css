@@ -7,6 +7,7 @@
 body {
     font-family: "Roboto", sans-serif;
 
+
 }
 
 /*+++++++++++++++++ NAVBAR Component +++++++++++++++++++++++++*/
@@ -29,6 +30,8 @@ body {
     align-items: center;
     height: 10vh;
     font-family: "Domine", serif;
+    max-width: 1300px;
+    margin: auto;
 }
 
 .nav-links {
@@ -175,6 +178,7 @@ body {
 /*+++++++++++++++++ CARD Component +++++++++++++++++++++++++*/
 .projects-section {
     /* display grid for the cards */
+    display: grid;
     background-color: #cecece;
 }
 
@@ -306,5 +310,150 @@ footer {
     .projects-icon,
     .contact-icon {
         font-size: 40px;
+    }
+
+    /* ~~~~~~~~ HOME Component~~~~~~~~~ */
+
+    .header {
+        font-size: 33px;
+    }
+
+    .my-description {
+        font-size: 20px;
+    }
+
+    .hireBTN {
+
+        font-size: 25px;
+        padding: 7px 57px;
+    }
+
+    /* ~~~~~~~~ CONTACTS Component~~~~~~~~~ */
+    .contactMe label {
+        font-size: 25px;
+    }
+
+    .contactHeader {
+        font-size: 75px;
+
+    }
+
+    .email,
+    .phone {
+        font-size: 30px;
+        text-decoration: none;
+        color: #222831;
+    }
+
+    /* ~~~~~~~~ Footer Component~~~~~~~~~ */
+
+
+    .copy-rights {
+        font-size: 17px;
+    }
+
+    .to-top {
+        color: #cecece;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .react-created {
+
+        font-size: 17px;
+    }
+}
+
+/* width 1079px and up */
+@media(min-width: 768px) {
+
+
+
+
+    /*+++++++++++++++++ CARD Component +++++++++++++++++++++++++*/
+    .projects-section {
+        /* display grid for the cards */
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ~~~~~~~~ Footer Component~~~~~~~~~ */
+
+
+    .copy-rights {
+        font-size: 25px;
+    }
+
+    .to-top {
+        color: #cecece;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    .react-created {
+
+        font-size: 25px;
+    }
+
+}
+
+@media(min-width: 1079px) {
+
+
+    /* ~~~~~~~~ HOME Component~~~~~~~~~ */
+
+    .header {
+        font-size: 43px;
+    }
+
+    .my-description {
+        font-size: 27px;
+    }
+
+    .hireBTN {
+
+        font-size: 30px;
+        padding: 7px 57px;
+    }
+
+
+    /*+++++++++++++++++ CARD Component +++++++++++++++++++++++++*/
+    .projects-section {
+        /* display grid for the cards */
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* ~~~~~~~~ Footer Component~~~~~~~~~ */
+
+
+    .copy-rights {
+        font-size: 25px;
+    }
+
+    .to-top {
+        color: #cecece;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    .react-created {
+
+        font-size: 25px;
+    }
+
+}
+
+/* media */
+@media(min-width:1200px) {
+
+    .navbar,
+    .card-menu {
+        max-width: 1200px;
+       
     }
 }

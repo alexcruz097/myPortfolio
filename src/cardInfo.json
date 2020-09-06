@@ -1,53 +1,50 @@
-
 [
   {
     "name": "Weather-App",
+    "url": "https://eloquent-sammet-a7d128.netlify.app/",
     "description": "Do you need a sweater or a beach towel. Use this app to find out!",
-    "video": "../videos/Weather-App.gif",
-    "techUse": ["HTML", "Css", "JavaScrip" , "React Js"]
+    "techUse": ["HTML", "Css", "JavaScrip", "React Js"]
   },
   {
     "name": "Trivia-App",
+    "url": "https://tender-murdock-4dcc94.netlify.app/",
     "description": "Put your brain to work. How many questions can you get right?",
-
-    "video": "../",
     "techUse": ["HTML", "Css", "JavaScript"]
   },
   {
     "name": "Budget-App",
+    "url": "https://focused-jepsen-6485e6.netlify.app/",
     "description": "Need help with your financial responsibiliy? The Budget-App will be your new best friend.",
-
-    "video": "../",
     "techUse": ["HTML", "Css", "JavaScript"]
   },
   {
     "name": "Seasons-App",
+    "url": "https://wonderful-mccarthy-1c272d.netlify.app/",
     "description": "Learn about the diffrent seasons that our beautiful planet has.",
-    "video": "../",
     "techUse": ["HTML", "Css", "JavaScript"]
   },
   {
     "name": "Microsoft-Clone",
+    "url": "https://cocky-mayer-d3d879.netlify.app/",
     "description": "A Microsoft home page clone.",
-    "video": "../",
     "techUse": ["HTML", "Css"]
   },
   {
     "name": "Menu",
+    "url": "https://musing-aryabhata-f609a6.netlify.app/",
     "description": "Doesnt this menu make you hugry? It makes me hungry.",
-    "video": "../",
     "techUse": ["HTML", "Css", "JavaScript"]
   },
   {
-    "name": "Random-Quotes",
+    "name": "Tin-Dog",
+    "url": "https://infallible-shockley-7a4a74.netlify.app/",
     "description": "Get inspire by this Quotes from some of the great human-beings that have walked this earth.",
-    "video": "../",
-    "techUse": ["HTML", "Css", "JavaScript"]
+    "techUse": ["HTML", "Bootstrap"]
   },
   {
     "name": "Random-Facts",
+    "url": "https://inspiring-montalcini-f3626a.netlify.app/",
     "description": "Do you want to impress your friend? Use this random fact generator and blow their mind in your next get together.",
-    "video": "../",
     "techUse": ["HTML", "Css", "JavaScrip"]
   }
 ]

@@ -20,10 +20,12 @@ const Navbar = () => {
     transform: `translateX(${0}%)`,
     opacity: 1,
   };
+
   const hideNavLinks = {
     transform: `translateX(${150}%)`,
     opacity: 0,
   };
+
   // inline styles to rotate hamburger
   const rotateHam = {
     transform: "rotate(-90deg)",
@@ -34,12 +36,12 @@ const Navbar = () => {
     transition: "all .4s",
   };
 
-  // Function will set the state of the hamburger to false
+  // Function will set the state of the hamburger to true
   function hamburgerNotClick() {
     setHamburgerClick(true);
   }
 
-  // Function will set the state of the hamburger to true
+  // Function will set the state of the hamburger to false
   function hamburgerIsClick() {
     setHamburgerClick(false);
   }
@@ -72,7 +74,7 @@ const Navbar = () => {
             className="minus-icon"
             icon={faMinus}
           />
-          <Link 
+          <Link
             className="home-icon"
             onClick={hamburgerIsClick}
             activeClass="active"
@@ -121,7 +123,14 @@ const Navbar = () => {
           >
             <FontAwesomeIcon icon={faPhoneAlt} /> Contacts
           </Link>
-          <a href="https://github.com/alexcruz097/myPortfolio" target="_blank" className="portfolio-github"><FontAwesomeIcon icon={faGithub} size="3x" color="black"/>portfolio</a> 
+          <a
+            href="https://github.com/alexcruz097/myPortfolio"
+            target="_blank"
+            className="portfolio-github"
+          >
+            <FontAwesomeIcon icon={faGithub} size="3x" color="black" />
+            portfolio
+          </a>
         </ul>
         <div className="hamburger">
           <FontAwesomeIcon
