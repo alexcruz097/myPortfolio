@@ -6,16 +6,16 @@ import Card from "./Card.jsx";
 import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
 // videos imported
-import WeatherVideo from "../videos/weatherApp.gif"
-import TriviaVideo from "../videos/trivia-App.gif"
-import Seasons from "../videos/seasons.gif"
-import MicrosoftClone from "../videos/microsoftClone.gif"
-import menu from "../videos/menu.gif"
-import TinDog from "../videos/TinDogBootstrap.gif";
-import FunFact from "../videos/funFacts.gif"
+import weatherVideo from "../videos/weather.mp4"
+import trivia from "../videos/trivia.mp4"
+import seasons from "../videos/seasons.mp4"
+import microsoft from "../videos/microsoft.mp4"
+import menu from "../videos/menu.mp4"
+import tinDog from "../videos/tinDog.mp4"
+import funFact from "../videos/funFacts.mp4"
 function App() {
   let data = require("../cardInfo.json");
-  let videos = [WeatherVideo, TriviaVideo, Seasons, Seasons, MicrosoftClone, menu, TinDog, FunFact]
+  let videos = [trivia, weatherVideo, seasons, seasons, microsoft, menu, tinDog, funFact]
   return (
     <div className="whole-page">
       <Navbar />
