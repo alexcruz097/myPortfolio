@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Card = (props) => {
   return (
     <div
-      // className = "project-gif"
       className="card-menu"
       // if the mouse enters the video will play
       onMouseOver={(event) => {
@@ -43,7 +42,7 @@ const Card = (props) => {
         }
       }}
     >
-      <a href={props.url}>
+      <a href={props.url} target="_blank">
         <h1 className="projects-name">{props.name}</h1>
       </a>
       <p className="description">
@@ -70,7 +69,7 @@ const Card = (props) => {
           return <li className="tech">{tech}</li>;
         })}
       </ol>
-      <a href="https://github.com/alexcruz097/weather-react" target="_blank">
+      <a href={props.gitHub} target="_blank">
         <FontAwesomeIcon icon={faGithub} color="#222831" size="2x" />
       </a>
     </div>

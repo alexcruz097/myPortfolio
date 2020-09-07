@@ -81,7 +81,7 @@ const Navbar = () => {
             to="home"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-95}
             duration={1000}
           >
             <FontAwesomeIcon icon={faHome} /> Home
@@ -94,7 +94,7 @@ const Navbar = () => {
             to="home"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-95}
             duration={1000}
           >
             <FontAwesomeIcon icon={faUserAstronaut} /> About
@@ -106,7 +106,7 @@ const Navbar = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-60}
             duration={1000}
           >
             <FontAwesomeIcon icon={faBriefcase} /> Projects

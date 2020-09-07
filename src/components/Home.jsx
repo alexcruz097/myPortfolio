@@ -1,6 +1,8 @@
 import React from "react";
 import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// importing smoth scrolling
+import { Link } from "react-scroll";
 const Home = () => {
   return (
     <section className="home">
@@ -9,10 +11,16 @@ const Home = () => {
         <p className="my-description">
           I'am a Self Taught Front-End Web Developer.
         </p>
-        <a href="#contactMe">
-          <button className="hireBTN">
-            <FontAwesomeIcon className="handshake-icon"icon={faHandshake} color="#cecece"/>  HIRE ME</button>
-        </a>
+        <Link
+          className="hireBTN"
+          to="contactMe"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={1000}
+        >
+          <FontAwesomeIcon className="handshake-icon" icon={faHandshake} color="#cecece" /> HIRE ME
+          </Link>
       </div>
     </section>
   );
