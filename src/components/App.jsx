@@ -34,8 +34,6 @@ function App(e) {
               video={videos[index]}
               description={data.description}
               techUse={data.techUse}
-           
-
             />
           );
         })}
