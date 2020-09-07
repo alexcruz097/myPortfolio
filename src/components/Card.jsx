@@ -7,7 +7,44 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Card = (props) => {
   return (
     // className = "project-gif"
-    <div className="card-menu">
+    <div
+      className="card-menu"
+      // if the mouse enters the video will play
+      onMouseOver={(event) => {
+        // dom manipulation to always target the video and play it from the parent element
+        switch (event.target.className) {
+          case "card-menu":
+            event.target.firstChild.nextSibling.nextSibling.firstChild.play();
+            break;
+          case "projects-name":
+            event.target.parentNode.nextSibling.nextSibling.firstChild.play();
+            break;
+          case "description":
+            event.target.nextSibling.firstChild.play();
+            break;
+          case "video-container":
+              event.target.firstChild.play();
+            break;
+          case "project-gif":
+            event.target.play();
+            break;
+          case "tech":
+            event.target.parentNode.previousElementSibling.firstChild.play()
+            break;
+     
+        }
+      }}
+      // if the mouse exits the card the video will stop
+      onMouseOut={(event) => {
+         // dom manipulation to always target the video and play it from the parent element
+        switch (event.target.className) {
+          case "card-menu":
+            event.target.firstChild.nextSibling.nextSibling.firstChild.pause();
+            break;
+          
+        }
+      }}
+    >
       <a href={props.url}>
         <h1 className="projects-name">{props.name}</h1>
       </a>
@@ -15,12 +52,14 @@ const Card = (props) => {
         <FontAwesomeIcon icon={faInfoCircle} color="#222831" />{" "}
         {props.description}
       </p>
-      <a href={props.url} target="_blank">
+      <a className="video-container" href={props.url} target="_blank">
         <video
           className="project-gif"
           autoPlay=""
           loop
           muted
+
+          // onMouseOut={e => (e.target.firstChild.nextSibling.nextSibling.firstChild.pause())}
         >
           <source
             type="video/mp4"
@@ -32,10 +71,10 @@ const Card = (props) => {
       <ol className="tech-use">
         {/* Iterrate over the array return a list item */}
         {props.techUse.map((tech) => {
-          return <li>{tech}</li>;
+          return <li className="tech">{tech}</li>;
         })}
       </ol>
-      <a href="https://github.com/alexcruz097/weather-react" target="_blank">
+      <a  href="https://github.com/alexcruz097/weather-react" target="_blank">
         <FontAwesomeIcon icon={faGithub} color="#222831" size="2x" />
       </a>
     </div>

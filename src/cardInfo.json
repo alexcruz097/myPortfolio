@@ -1,15 +1,21 @@
 [
-  {
-    "name": "Weather-App",
-    "url": "https://eloquent-sammet-a7d128.netlify.app/",
-    "description": "Do you need a sweater or a beach towel. Use this app to find out!",
-    "techUse": ["HTML", "Css", "JavaScrip", "React Js"]
-  },
+  
   {
     "name": "Trivia-App",
     "url": "https://tender-murdock-4dcc94.netlify.app/",
     "description": "Put your brain to work. How many questions can you get right?",
     "techUse": ["HTML", "Css", "JavaScript"]
+  },
+  {
+    "name": "Weather-App",
+    "url": "https://eloquent-sammet-a7d128.netlify.app/",
+    "description": "Do you need a sweater or a beach towel. Use this app to find out!",
+    "techUse": [
+      "HTML",
+      "Css",
+      "JavaScrip",
+      "React Js"
+    ]
   },
   {
     "name": "Budget-App",

@@ -13,9 +13,12 @@ import microsoft from "../videos/microsoft.mp4"
 import menu from "../videos/menu.mp4"
 import tinDog from "../videos/tinDog.mp4"
 import funFact from "../videos/funFacts.mp4"
-function App() {
+function App(e) {
   let data = require("../cardInfo.json");
   let videos = [trivia, weatherVideo, seasons, seasons, microsoft, menu, tinDog, funFact]
+ 
+
+ 
   return (
     <div className="whole-page">
       <Navbar />
@@ -31,6 +34,8 @@ function App() {
               video={videos[index]}
               description={data.description}
               techUse={data.techUse}
+           
+
             />
           );
         })}
