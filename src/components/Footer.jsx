@@ -19,7 +19,7 @@ function scrollToTop() {
       </h1>
       <a className="to-top" onClick={scrollToTop}>
         <FontAwesomeIcon color="#cecece" icon={faHandPointUp} size="2x" />
-        to top
+        To top
       </a>
       <p>
         Created with <span className="react-created">React Js</span>

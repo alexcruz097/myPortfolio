@@ -42,7 +42,7 @@ const Card = (props) => {
         }
       }}
     >
-      <a href={props.url} target="_blank">
+      <a className="name-link" href={props.url} target="_blank">
         <h1 className="projects-name">{props.name}</h1>
       </a>
       <p className="description">

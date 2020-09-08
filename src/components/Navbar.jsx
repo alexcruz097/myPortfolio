@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   faHome,
-  faUserAstronaut,
+  faFileAlt,
   faBriefcase,
   faPhoneAlt,
   faHamburger,
@@ -34,6 +34,8 @@ const Navbar = () => {
   const UnRotateHam = {
     transform: "rotate(0deg)",
     transition: "all .4s",
+
+  
   };
 
   // Function will set the state of the hamburger to true
@@ -54,7 +56,19 @@ const Navbar = () => {
       hamburgerIsClick();
     }
   }
+  
+  // this code will check the width and heigth of the screen and store it in a variable
+  const [windowsSize, setwindowsSize] = useState([0, 0]);
+    useEffect(() => {
+      function updateSize() {
+        setwindowsSize([window.innerWidth, window.innerHeight]);
+      }
+      window.addEventListener('resize', updateSize);
+      updateSize();
+      return () => window.removeEventListener('resize', updateSize);
+    }, []);
 
+  
   return (
     <section className="nav-section">
       <nav className="navbar">
@@ -66,8 +80,11 @@ const Navbar = () => {
 
         <ul
           className="nav-links"
-          style={toggleHamburgerClick ? showNavLinks : hideNavLinks}
-        >
+          style={
+            toggleHamburgerClick || windowsSize[0] > 767 ? showNavLinks : hideNavLinks,
+            windowsSize[0] > 767 || toggleHamburgerClick? showNavLinks : hideNavLinks
+          }
+         >
           <FontAwesomeIcon
             size="2x"
             onClick={hamburgerIsClick}
@@ -87,18 +104,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faHome} /> Home
           </Link>
 
-          <Link
-            className="home-icon"
-            onClick={hamburgerIsClick}
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-95}
-            duration={1000}
-          >
-            <FontAwesomeIcon icon={faUserAstronaut} /> About
-          </Link>
+          
           <Link
             className="home-icon"
             onClick={hamburgerIsClick}
@@ -123,13 +129,25 @@ const Navbar = () => {
           >
             <FontAwesomeIcon icon={faPhoneAlt} /> Contacts
           </Link>
+          <Link
+            className="home-icon"
+            onClick={hamburgerIsClick}
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-95}
+            duration={1000}
+          >
+            <FontAwesomeIcon icon={faFileAlt} /> Resume
+          </Link>
           <a
             href="https://github.com/alexcruz097/myPortfolio"
             target="_blank"
             className="portfolio-github"
           >
-            <FontAwesomeIcon icon={faGithub} size="3x" color="black" />
-            portfolio
+            <FontAwesomeIcon icon={faGithub} color="black" className="portfolio-icon" />
+            Portfolio
           </a>
         </ul>
         <div className="hamburger">
