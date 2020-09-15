@@ -13,9 +13,10 @@ import microsoft from "../videos/microsoft.mp4"
 import menu from "../videos/menu.mp4"
 import tinDog from "../videos/tinDog.mp4"
 import funFact from "../videos/funFacts.mp4"
+import budgetApp from "../videos/budgetApp.mp4"
 function App(e) {
   let data = require("../cardInfo.json");
-  let videos = [trivia, weatherVideo, seasons, seasons, microsoft, menu, tinDog, funFact]
+  let videos = [trivia, weatherVideo, budgetApp, seasons, microsoft, menu, tinDog, funFact]
  
 
  
