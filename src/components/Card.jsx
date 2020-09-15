@@ -54,6 +54,7 @@ const Card = (props) => {
           className="project-gif"
           loop
           muted
+          playsInline
           // onMouseOut={e => (e.target.firstChild.nextSibling.nextSibling.firstChild.pause())}
         >
           <source
