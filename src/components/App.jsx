@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar.jsx";
 import Home from "./Home.jsx";
+import AboutMe from "./AboutMe";
 import Card from "./Card.jsx";
-
-import Contact from "./Contact.jsx";
+import Contact from "./Contacts.jsx";
 import Footer from "./Footer.jsx";
 // videos imported
 import weatherVideo from "../videos/weather.mp4"
@@ -14,18 +14,37 @@ import menu from "../videos/menu.mp4"
 import tinDog from "../videos/tinDog.mp4"
 import funFact from "../videos/funFacts.mp4"
 import budgetApp from "../videos/budgetApp.mp4"
+// icons for AboutMe component
+import { faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
+
 function App(e) {
+  // get data for Card component
   let data = require("../cardInfo.json");
   let videos = [trivia, weatherVideo, budgetApp, seasons, microsoft, menu, tinDog, funFact]
- 
-
- 
+let icons = [faSpaceShuttle, faSpaceShuttle, faSpaceShuttle];
   return (
     <div className="whole-page">
       <Navbar />
       <Home id="home" />
+
+      <section className="aboutMe-section" id="about">
+        <h2 className="about-section-header">About Me..</h2>
+        {data[0].aboutData.map((data, index) =>
+        {
+          return <AboutMe 
+            
+            key={index}
+            icon={icons[index]}
+            header={data.header}
+            description={data.description}
+            
+          />;
+        })
+        
+        }
+      </section>
       <section className="projects-section" id="projects">
-        {data.map((data, index) => {
+        {data[0].cardData.map((data, index) => {
           return (
             <Card
               key={index}
@@ -35,7 +54,7 @@ function App(e) {
               video={videos[index]}
               description={data.description}
               techUse={data.techUse}
-              gitHub ={data.gitHub}
+              gitHub={data.gitHub}
             />
           );
         })}

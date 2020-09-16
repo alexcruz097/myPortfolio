@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import {
   faHome,
-  faFileAlt,
   faBriefcase,
   faPhoneAlt,
   faHamburger,
   faMinus,
+   faUserAstronaut
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -81,10 +81,14 @@ const Navbar = () => {
         <ul
           className="nav-links"
           style={
-            toggleHamburgerClick || windowsSize[0] > 767 ? showNavLinks : hideNavLinks,
-            windowsSize[0] > 767 || toggleHamburgerClick? showNavLinks : hideNavLinks
+            (toggleHamburgerClick || windowsSize[0] > 767
+              ? showNavLinks
+              : hideNavLinks,
+            windowsSize[0] > 767 || toggleHamburgerClick
+              ? showNavLinks
+              : hideNavLinks)
           }
-         >
+        >
           <FontAwesomeIcon
             size="2x"
             onClick={hamburgerIsClick}
@@ -103,8 +107,19 @@ const Navbar = () => {
           >
             <FontAwesomeIcon icon={faHome} /> Home
           </Link>
+          <Link
+            className="home-icon"
+            onClick={hamburgerIsClick}
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-58}
+            duration={1000}
+          >
+            <FontAwesomeIcon icon={faUserAstronaut} /> About Me
+          </Link>
 
-          
           <Link
             className="home-icon"
             onClick={hamburgerIsClick}
@@ -124,29 +139,21 @@ const Navbar = () => {
             to="contactMe"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-5}
             duration={1000}
           >
             <FontAwesomeIcon icon={faPhoneAlt} /> Contacts
-          </Link>
-          <Link
-            className="home-icon"
-            onClick={hamburgerIsClick}
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-95}
-            duration={1000}
-          >
-            <FontAwesomeIcon icon={faFileAlt} /> Resume
           </Link>
           <a
             href="https://github.com/alexcruz097/myPortfolio"
             target="_blank"
             className="portfolio-github"
           >
-            <FontAwesomeIcon icon={faGithub} color="black" className="portfolio-icon" />
+            <FontAwesomeIcon
+              icon={faGithub}
+              color="black"
+              className="portfolio-icon"
+            />
             Portfolio
           </a>
         </ul>
