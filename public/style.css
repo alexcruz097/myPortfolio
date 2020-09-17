@@ -128,7 +128,7 @@ body {
   margin-top: 10vh;
   border: 1px solid black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./images/homeImageLarge.jpg");
+    url("./images/homeImageSmall.jpg");
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -275,7 +275,8 @@ body {
   font-size: 17px;
 }
 
-.project-gif {
+.project-gif,
+.card-thumbnail {
   width: 100%;
   margin: 13px 0px;
   border-radius: 12px;

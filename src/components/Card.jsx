@@ -3,8 +3,13 @@ import React from "react";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 const Card = (props) => {
+  const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
+  const onLoadedData = () => {
+    setIsVideoLoaded(true);
+  };
+
+
   return (
     <div
       className="card-menu"
@@ -13,19 +18,16 @@ const Card = (props) => {
         // dom manipulation to always target the video and play it from the parent element
         switch (event.target.className) {
           case "card-menu":
-            event.target.firstChild.nextSibling.nextSibling.firstChild.play();
+            event.target.firstChild.nextSibling.nextSibling.nextSibling.firstChild.play();
             break;
           case "projects-name":
-            event.target.parentNode.nextSibling.nextSibling.firstChild.play();
+            event.target.parentNode.nextSibling.nextSibling.nextSibling.firstChild.play();
             break;
           case "description":
-            event.target.nextSibling.firstChild.play();
+            event.target.nextSibling.nextSibling.firstChild.play();
             break;
           case "video-container":
             event.target.firstChild.play();
-            break;
-          case "project-gif":
-            event.target.play();
             break;
           case "tech":
             event.target.parentNode.previousElementSibling.firstChild.play();
@@ -37,11 +39,12 @@ const Card = (props) => {
         // dom manipulation to always target the video and play it from the parent element
         switch (event.target.className) {
           case "card-menu":
-            event.target.firstChild.nextSibling.nextSibling.firstChild.pause();
+            event.target.firstChild.nextSibling.nextSibling.nextSibling.firstChild.pause();
             break;
         }
       }}
     >
+
       <a className="name-link" href={props.url} target="_blank">
         <h1 className="projects-name">{props.name}</h1>
       </a>
@@ -49,13 +52,21 @@ const Card = (props) => {
         <FontAwesomeIcon icon={faInfoCircle} color="#222831" />{" "}
         {props.description}
       </p>
+      {/* show this thumbnail while the video is loading */}
+      <img
+        src={props.thumbnail}
+        className="card-thumbnail"
+        style={{ display: isVideoLoaded ? "none" : "block" }}
+      />
+   
       <a className="video-container" href={props.url} target="_blank">
         <video
           className="project-gif"
           loop
           muted
           playsInline
-          // onMouseOut={e => (e.target.firstChild.nextSibling.nextSibling.firstChild.pause())}
+          onLoadedData={onLoadedData}
+          style={{ display: isVideoLoaded ? "block" : "none" }}
         >
           <source
             type="video/mp4"

@@ -5,7 +5,7 @@ import {
   faPhoneAlt,
   faHamburger,
   faMinus,
-   faUserAstronaut
+  faUserAstronaut,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,13 +17,22 @@ const Navbar = () => {
 
   // inline style to toggle the links
   const showNavLinks = {
-    transform: `translateX(${0}%)`,
     opacity: 1,
+    // safari
+    WebkitTransform: `translateX(${0}%)`,
+    MozTransform: `translateX(${0}%)`,
+    MsTransform: `translateX(${0}%)`,
+    OTransform: `translateX(${0}%)`,
+    transform: `translateX(${0}%)`,
   };
-
+  // safari
   const hideNavLinks = {
-    transform: `translateX(${150}%)`,
     opacity: 0,
+    WebkitTransform: `translateX(${150}%)`,
+    MozTransform: `translateX(${150}%)`,
+    MsTransform: `translateX(${150}%)`,
+    OTransform: `translateX(${150}%)`,
+    transform: `translateX(${150}%)`,
   };
 
   // inline styles to rotate hamburger
@@ -34,8 +43,6 @@ const Navbar = () => {
   const UnRotateHam = {
     transform: "rotate(0deg)",
     transition: "all .4s",
-
-  
   };
 
   // Function will set the state of the hamburger to true
@@ -56,19 +63,18 @@ const Navbar = () => {
       hamburgerIsClick();
     }
   }
-  
+
   // this code will check the width and heigth of the screen and store it in a variable
   const [windowsSize, setwindowsSize] = useState([0, 0]);
-    useEffect(() => {
-      function updateSize() {
-        setwindowsSize([window.innerWidth, window.innerHeight]);
-      }
-      window.addEventListener('resize', updateSize);
-      updateSize();
-      return () => window.removeEventListener('resize', updateSize);
-    }, []);
+  useEffect(() => {
+    function updateSize() {
+      setwindowsSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
 
-  
   return (
     <section className="nav-section">
       <nav className="navbar">
