@@ -77,8 +77,8 @@ const Card = (props) => {
       </a>
       <ol className="tech-use">
         {/* Iterrate over the array return a list item */}
-        {props.techUse.map((tech) => {
-          return <li className="tech">{tech}</li>;
+        {props.techUse.map((tech, index) => {
+          return <li className="tech" key={index}>{tech}</li>;
         })}
       </ol>
       <a href={props.gitHub} target="_blank">

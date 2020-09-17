@@ -103,6 +103,7 @@ body {
   top: 2%;
   cursor: pointer;
   transition: all 0.4s;
+  z-index: 2;
 }
 
 .minus-icon:hover {
@@ -357,10 +358,20 @@ body {
 }
 
 .to-top {
-  color: #cecece;
+  cursor: pointer;
+  position: fixed;
+  bottom: 3.5rem;
+  right: 0.5rem;
+  z-index: 2;
+  font-size: 40px;
+  color: black;
+  opacity: .8;
+  transition: transform .3s ease-out;
 }
 
-footer {
+.to-top:hover{
+transform: translateY(-7px);
+} footer {
   font-size: 9px;
 }
 
@@ -433,10 +444,6 @@ footer {
 
   .copy-rights {
     font-size: 17px;
-  }
-
-  .to-top {
-    color: #cecece;
   }
 
   footer {
@@ -555,9 +562,7 @@ footer {
   }
 
   .about-description {
-
     font-size: 18px;
-
   }
 
   /*+++++++++++++++++ CARD Component +++++++++++++++++++++++++*/
@@ -570,10 +575,6 @@ footer {
 
   .copy-rights {
     font-size: 25px;
-  }
-
-  .to-top {
-    color: #cecece;
   }
 
   footer {
@@ -642,10 +643,6 @@ footer {
 
   .copy-rights {
     font-size: 25px;
-  }
-
-  .to-top {
-    color: #cecece;
   }
 
   footer {

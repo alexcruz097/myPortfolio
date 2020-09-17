@@ -9,7 +9,7 @@ const Home = () => {
       <div className="homeContent">
         <h1 className="header">Hello, My name is Alex Cruz</h1>
         <p className="my-description">
-          I'am a Self Taught Front-End Web Developerr.
+          I'am a Self Taught Front-End Web Developer.
         </p>
         <Link
           className="hireBTN"
@@ -19,7 +19,7 @@ const Home = () => {
           offset={0}
           duration={1000}
         >
-          <FontAwesomeIcon className="handshake-icon" icon={faHandshake} color="#cecece" /> HIRE ME
+          <FontAwesomeIcon className="handshake-icon" icon={faHandshake} color="#cecece" /> Contact Me
           </Link>
       </div>
     </section>

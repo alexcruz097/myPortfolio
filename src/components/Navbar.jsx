@@ -19,20 +19,20 @@ const Navbar = () => {
   const showNavLinks = {
     opacity: 1,
     // safari
-    WebkitTransform: `translateX(${0}%)`,
-    MozTransform: `translateX(${0}%)`,
-    MsTransform: `translateX(${0}%)`,
-    OTransform: `translateX(${0}%)`,
-    transform: `translateX(${0}%)`,
+    MsTransform: "translateX(0rem)",
+    WebkitTransform: "translateX(0rem)",
+    MozTransform: "translateX(0rem)",
+    OTransform: "translateX(0rem)",
+    transform: "translateX(0rem)"
   };
   // safari
   const hideNavLinks = {
     opacity: 0,
-    WebkitTransform: `translateX(${150}%)`,
-    MozTransform: `translateX(${150}%)`,
-    MsTransform: `translateX(${150}%)`,
-    OTransform: `translateX(${150}%)`,
-    transform: `translateX(${150}%)`,
+    MsTransform: "translateX(45rem)",
+    WebkitTransform: "translateX(45rem)",
+    MozTransform: "translateX(45rem)",
+    OTransform: "translateX(45rem)",
+    transform: "translateX(45rem)",
   };
 
   // inline styles to rotate hamburger
