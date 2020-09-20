@@ -24,8 +24,8 @@ import tinDogThumb from "../thumbnail/tinDogThumb.jpg";
 import funThumb from "../thumbnail/funThumb.jpg";
 import budgetThumb from "../thumbnail/budgetThumb.jpg";
 // icons for AboutMe component
-import { faSpaceShuttle } from "@fortawesome/free-solid-svg-icons";
-
+import { faRunning,faFlushed} from "@fortawesome/free-solid-svg-icons";
+import { faProductHunt } from "@fortawesome/free-brands-svg-icons";
 function App(e) {
   // get data for Card component
   let data = require("../cardInfo.json");
@@ -49,7 +49,7 @@ function App(e) {
     tinDogThumb,
     funThumb,
   ];
-  let icons = [faSpaceShuttle, faSpaceShuttle, faSpaceShuttle];
+  let icons = [faRunning, faFlushed, faProductHunt];
   return (
     <div className="whole-page">
       <Navbar />

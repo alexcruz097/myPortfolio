@@ -28,11 +28,11 @@ const Navbar = () => {
   // safari
   const hideNavLinks = {
     opacity: 0,
-    MsTransform: "translateX(45rem)",
-    WebkitTransform: "translateX(45rem)",
-    MozTransform: "translateX(45rem)",
-    OTransform: "translateX(45rem)",
-    transform: "translateX(45rem)",
+    MsTransform: "translateX(44rem)",
+    WebkitTransform: "translateX(44rem)",
+    MozTransform: "translateX(44rem)",
+    OTransform: "translateX(44rem)",
+    transform: "translateX(44rem)"
   };
 
   // inline styles to rotate hamburger
@@ -120,7 +120,7 @@ const Navbar = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-58}
+            offset={-57}
             duration={1000}
           >
             <FontAwesomeIcon icon={faUserAstronaut} /> About Me
@@ -133,7 +133,7 @@ const Navbar = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-58}
             duration={1000}
           >
             <FontAwesomeIcon icon={faBriefcase} /> Projects
