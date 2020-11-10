@@ -6,7 +6,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-
   background-color: #cecece;
 }
 
@@ -150,11 +149,9 @@ body {
   font-weight: lighter;
   font-family: "Domine", serif;
 }
-
-.my-description {
-  font-size: 15px;
+.Typewriter__wrapper {
+  font-size: 12px;
 }
-
 .hireBTN {
   background-color: #f2a365;
   font-size: 20px;
@@ -168,6 +165,7 @@ body {
 }
 
 .handshake-icon {
+  color: white;
   transition: all 1s ease-in-out;
 }
 
@@ -407,8 +405,8 @@ footer {
     font-size: 33px;
   }
 
-  .my-description {
-    font-size: 20px;
+  .Typewriter__wrapper {
+    font-size: 19px;
   }
 
   .hireBTN {
@@ -551,7 +549,7 @@ footer {
     font-size: 43px;
   }
 
-  .my-description {
+  .Typewriter__wrapper {
     font-size: 25px;
   }
 
@@ -638,8 +636,8 @@ footer {
     font-size: 43px;
   }
 
-  .my-description {
-    font-size: 27px;
+  .Typewriter__wrapper {
+    font-size: 26px;
   }
 
   .hireBTN {

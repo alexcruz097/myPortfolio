@@ -8,7 +8,7 @@ import Footer from "./Footer.jsx";
 // videos imported
 import weatherVideo from "../videos/weather.mp4";
 import trivia from "../videos/trivia.mp4";
-import seasons from "../videos/seasons.mp4";
+import jobApp from "../videos/jobSearch.mp4";
 import microsoft from "../videos/microsoft.mp4";
 import menu from "../videos/menu.mp4";
 import tinDog from "../videos/tinDog.mp4";
@@ -17,7 +17,7 @@ import budgetApp from "../videos/budgetApp.mp4";
 // import Thumbnails
 import weatherThumb from "../thumbnail/weatherThumb.jpg";
 import triviaThumb from "../thumbnail/triviaThumb.jpg";
-import seasonsThumb from "../thumbnail/seaThumb.jpg";
+import jobSearchThumb from "../thumbnail/jobSearchThumb.jpg";
 import microThumb from "../thumbnail/microThumb.jpg";
 import menuThumb from "../thumbnail/menuThumb.jpg";
 import tinDogThumb from "../thumbnail/tinDogThumb.jpg";
@@ -30,20 +30,20 @@ function App(e) {
   // get data for Card component
   let data = require("../cardInfo.json");
   let videos = [
+    jobApp,
     trivia,
     weatherVideo,
     budgetApp,
-    seasons,
     microsoft,
     menu,
     tinDog,
     funFact,
   ];
   let thumbnail = [
+    jobSearchThumb,
     triviaThumb,
     weatherThumb,
     budgetThumb,
-    seasonsThumb,
     microThumb,
     menuThumb,
     tinDogThumb,
@@ -56,7 +56,7 @@ function App(e) {
       <Home id="home" />
 
       <section className="aboutMe-section" id="about">
-        <h2 className="about-section-header">About Me..</h2>
+        <h2 className="about-section-header">About Me...</h2>
         {data[0].aboutData.map((data, index) => {
           return (
             <AboutMe

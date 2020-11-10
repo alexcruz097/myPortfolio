@@ -2,6 +2,13 @@
   {
     "cardData": [
       {
+        "name": "Job-Search-App",
+        "url": "https://alex-cruz-job-search.herokuapp.com/",
+        "description": "Find new opportunities in your career  by using this Job Search application.",
+        "techUse": ["Node Js", "Express Js", "Ejs Template", "BootStrap"],
+        "gitHub": "https://github.com/alexcruz097/Job-Search"
+      },
+      {
         "name": "Trivia-App",
         "url": "https://tender-murdock-4dcc94.netlify.app/",
         "description": "Put your brain to work. How many questions can you get right?",
@@ -22,13 +29,7 @@
         "techUse": ["HTML", "CSS", "JavaScript"],
         "gitHub": "https://github.com/alexcruz097/Budget-App"
       },
-      {
-        "name": "Seasons-App",
-        "url": "https://wonderful-mccarthy-1c272d.netlify.app/",
-        "description": "Learn a quick fact about the four seasons that our beautiful planet has.",
-        "techUse": ["HTML", "CSS", "JavaScript"],
-        "gitHub": "https://github.com/alexcruz097/Seasons-App"
-      },
+
       {
         "name": "Microsoft-Clone",
         "url": "https://cocky-mayer-d3d879.netlify.app/",
