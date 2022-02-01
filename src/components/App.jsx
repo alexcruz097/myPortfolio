@@ -56,7 +56,7 @@ function App(e) {
       <Home id="home" />
 
       <section className="aboutMe-section" id="about">
-        <h2 className="about-section-header">About Me...</h2>
+        <h2 className="about-section-header">About Me</h2>
         {data[0].aboutData.map((data, index) => {
           return (
             <AboutMe
