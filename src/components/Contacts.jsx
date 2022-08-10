@@ -6,8 +6,8 @@ const Contact = (props) => {
     <form className="contactMe">
       <h1 className="contactHeader">Contact Me</h1>
       <label htmlFor="phone">Phone: </label>
-      <a className="phone" href="tel:7472559610">
-        Give me a call <span>747-255-9610</span>
+      <a className="phone" href="https://www.linkedin.com/in/alex-cruz-4202651b0/">
+        Let's Connect on <span>LINKEDIN</span>
       </a>
       <label htmlFor="email">Email:</label>
       <a className="email" href="mailto:alexc017@yahoo.com">
