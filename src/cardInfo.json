@@ -9,6 +9,13 @@
         "gitHub": "https://github.com/alexcruz097/Job-Search"
       },
       {
+        "name": "Netflix Clone",
+        "url": "https://62eb39e08fe38e300d06e499--euphonious-boba-eca028.netlify.app/",
+        "description": "Put your brain to work. How many questions can you get right?",
+        "techUse": ["React Js", "CSS", "JSX"],
+        "gitHub": "https://github.com/alexcruz097/NetflixReactClone"
+      },
+      {
         "name": "Trivia-App",
         "url": "https://tender-murdock-4dcc94.netlify.app/",
         "description": "Put your brain to work. How many questions can you get right?",

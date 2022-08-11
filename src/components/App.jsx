@@ -7,6 +7,7 @@ import Contact from "./Contacts.jsx";
 import Footer from "./Footer.jsx";
 // videos imported
 import weatherVideo from "../videos/weather.mp4";
+import netflixCloneVideo from "../videos/netflixCloneVideo.mp4"
 import trivia from "../videos/trivia.mp4";
 import jobApp from "../videos/jobSearch.mp4";
 import microsoft from "../videos/microsoft.mp4";
@@ -16,6 +17,7 @@ import funFact from "../videos/funFacts.mp4";
 import budgetApp from "../videos/budgetApp.mp4";
 // import Thumbnails
 import weatherThumb from "../thumbnail/weatherThumb.jpg";
+import netflixClone from "../thumbnail/netflixClone.png"
 import triviaThumb from "../thumbnail/triviaThumb.jpg";
 import jobSearchThumb from "../thumbnail/jobSearchThumb.jpg";
 import microThumb from "../thumbnail/microThumb.jpg";
@@ -31,6 +33,7 @@ function App(e) {
   let data = require("../cardInfo.json");
   let videos = [
     jobApp,
+    netflixCloneVideo,
     trivia,
     weatherVideo,
     budgetApp,
@@ -41,6 +44,7 @@ function App(e) {
   ];
   let thumbnail = [
     jobSearchThumb,
+    netflixClone,
     triviaThumb,
     weatherThumb,
     budgetThumb,
