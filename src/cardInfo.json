@@ -2,6 +2,24 @@
   {
     "cardData": [
       {
+        "name": "The EchoSystem",
+        "url": "https://www.theechosystem.org//",
+        "description": "Website I built and design for the company that I had an intership with. The EchoSystem.",
+        "techUse": ["HubSpot","templates", "dss"],
+        "gitHub": "https://github.com/alexcruz097/Job-Search"
+      }, {
+        "name": "Trees by Water",
+        "url": "https://treesbythewater.org/",
+        "description": "Website I built and design for the company that I had an intership with. TreesByWater.",
+        "techUse": ["hubspot","templates", "dss"],
+        "gitHub": "https://github.com/alexcruz097/Job-Search"
+      }, {
+        "name": "Solid Foundation",
+        "url": "http://solidmoneyfoundation.com/",
+        "description": "Website I built and design for the company that I had an intership with. SolidMoneyFoundation",
+        "techUse": ["Hubspot","templates", "dss"],
+        "gitHub": "https://github.com/alexcruz097/Job-Search"
+      }, {
         "name": "Job-Search-App",
         "url": "https://alex-cruz-job-search.herokuapp.com/",
         "description": "Find new opportunities in your career  by using this Job Search application.",

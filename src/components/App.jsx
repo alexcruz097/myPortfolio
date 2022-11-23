@@ -16,6 +16,9 @@ import tinDog from "../videos/tinDog.mp4";
 import funFact from "../videos/funFacts.mp4";
 import budgetApp from "../videos/budgetApp.mp4";
 // import Thumbnails
+import echoSystem from "../thumbnail/echoSystemThumb.png"
+import solidMoneyThumb from "../thumbnail/solidMoneyThumb.png"
+import treesThumb from "../thumbnail/treesThumb.png"
 import weatherThumb from "../thumbnail/weatherThumb.jpg";
 import netflixClone from "../thumbnail/netflixClone.png"
 import triviaThumb from "../thumbnail/triviaThumb.jpg";
@@ -32,6 +35,9 @@ function App(e) {
   // get data for Card component
   let data = require("../cardInfo.json");
   let videos = [
+    echoSystem,
+    treesThumb,
+    solidMoneyThumb,
     jobApp,
     netflixCloneVideo,
     trivia,
@@ -43,6 +49,9 @@ function App(e) {
     funFact,
   ];
   let thumbnail = [
+    echoSystem,
+    treesThumb,
+    solidMoneyThumb,
     jobSearchThumb,
     netflixClone,
     triviaThumb,
