@@ -5,19 +5,19 @@
         "name": "The EchoSystem",
         "url": "https://www.theechosystem.org//",
         "description": "Website I built and design for the company that I had an intership with. The EchoSystem.",
-        "techUse": ["HubSpot","templates", "dss"],
+        "techUse": ["HubSpot","templates", "DSS"],
         "gitHub": "https://github.com/alexcruz097/Job-Search"
       }, {
         "name": "Trees by Water",
         "url": "https://treesbythewater.org/",
         "description": "Website I built and design for the company that I had an intership with. TreesByWater.",
-        "techUse": ["hubspot","templates", "dss"],
+        "techUse": ["hubspot","templates", "DSS"],
         "gitHub": "https://github.com/alexcruz097/Job-Search"
       }, {
         "name": "Solid Foundation",
         "url": "http://solidmoneyfoundation.com/",
         "description": "Website I built and design for the company that I had an intership with. SolidMoneyFoundation",
-        "techUse": ["Hubspot","templates", "dss"],
+        "techUse": ["Hubspot","templates", "DSS"],
         "gitHub": "https://github.com/alexcruz097/Job-Search"
       }, {
         "name": "Job-Search-App",
